@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		F966F1B21DD85CBB0040CBCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966F1B11DD85CBB0040CBCA /* AppDelegate.swift */; };
-		F966F1B41DD85CBB0040CBCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966F1B31DD85CBB0040CBCA /* ViewController.swift */; };
+		F966F1B41DD85CBB0040CBCA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966F1B31DD85CBB0040CBCA /* CameraViewController.swift */; };
 		F966F1B71DD85CBB0040CBCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F966F1B51DD85CBB0040CBCA /* Main.storyboard */; };
 		F966F1B91DD85CBB0040CBCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F966F1B81DD85CBB0040CBCA /* Assets.xcassets */; };
 		F966F1BC1DD85CBB0040CBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F966F1BA1DD85CBB0040CBCA /* LaunchScreen.storyboard */; };
+		F966F1C51DD85CF30040CBCA /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966F1C41DD85CF30040CBCA /* PreviewView.swift */; };
+		F966F1C81DD85D240040CBCA /* CameraCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966F1C61DD85D240040CBCA /* CameraCollectionView.swift */; };
+		F966F1C91DD85D240040CBCA /* ImagePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966F1C71DD85D240040CBCA /* ImagePickerCell.swift */; };
+		F966F1CB1DD85E270040CBCA /* CameraViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966F1CA1DD85E270040CBCA /* CameraViewConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F966F1AE1DD85CBB0040CBCA /* GridCameraView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridCameraView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F966F1B11DD85CBB0040CBCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F966F1B31DD85CBB0040CBCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F966F1B31DD85CBB0040CBCA /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		F966F1B61DD85CBB0040CBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F966F1B81DD85CBB0040CBCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F966F1BB1DD85CBB0040CBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F966F1BD1DD85CBB0040CBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F966F1C41DD85CF30040CBCA /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		F966F1C61DD85D240040CBCA /* CameraCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraCollectionView.swift; sourceTree = "<group>"; };
+		F966F1C71DD85D240040CBCA /* ImagePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerCell.swift; sourceTree = "<group>"; };
+		F966F1CA1DD85E270040CBCA /* CameraViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		F966F1B01DD85CBB0040CBCA /* GridCameraView */ = {
 			isa = PBXGroup;
 			children = (
+				F966F1C31DD85CCB0040CBCA /* CameraControl */,
 				F966F1B11DD85CBB0040CBCA /* AppDelegate.swift */,
-				F966F1B31DD85CBB0040CBCA /* ViewController.swift */,
+				F966F1B31DD85CBB0040CBCA /* CameraViewController.swift */,
 				F966F1B51DD85CBB0040CBCA /* Main.storyboard */,
 				F966F1B81DD85CBB0040CBCA /* Assets.xcassets */,
 				F966F1BA1DD85CBB0040CBCA /* LaunchScreen.storyboard */,
 				F966F1BD1DD85CBB0040CBCA /* Info.plist */,
 			);
 			path = GridCameraView;
+			sourceTree = "<group>";
+		};
+		F966F1C31DD85CCB0040CBCA /* CameraControl */ = {
+			isa = PBXGroup;
+			children = (
+				F966F1CA1DD85E270040CBCA /* CameraViewConfiguration.swift */,
+				F966F1C61DD85D240040CBCA /* CameraCollectionView.swift */,
+				F966F1C71DD85D240040CBCA /* ImagePickerCell.swift */,
+				F966F1C41DD85CF30040CBCA /* PreviewView.swift */,
+			);
+			name = CameraControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F966F1B41DD85CBB0040CBCA /* ViewController.swift in Sources */,
+				F966F1CB1DD85E270040CBCA /* CameraViewConfiguration.swift in Sources */,
+				F966F1B41DD85CBB0040CBCA /* CameraViewController.swift in Sources */,
+				F966F1C81DD85D240040CBCA /* CameraCollectionView.swift in Sources */,
 				F966F1B21DD85CBB0040CBCA /* AppDelegate.swift in Sources */,
+				F966F1C51DD85CF30040CBCA /* PreviewView.swift in Sources */,
+				F966F1C91DD85D240040CBCA /* ImagePickerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
